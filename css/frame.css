@@ -1,0 +1,12 @@
+#close-btn{
+  color: #FFF;
+  font-size: 50px;
+  position:absolute;
+  top:0;
+  right:0;
+  background-color: #333;
+  height: 50px;
+  width: 50px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+}
