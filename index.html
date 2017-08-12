@@ -11,19 +11,23 @@
 
   <body>
 
-    <p id = "close-btn">&times</p>
+    <ul class = "frame">
+      <li id = "min-btn">-</li>
+      <li id = "help-btn">?</li>
+      <li id = "settings-btn">&#9881</li>
+      <li id = "close-btn">&times</li>
+    </ul>
 
-    <img id = 'logo' src = "img/icon.png" width = "200px"/>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">a</a>
+      <a href="#">b</a>
+      <a href="#">c</a>
+      <a href="#">d</a>
+    </div>
+    <span id = "menu-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
-    <form class = 'login' action="/action_page.php">
-      <fieldset>
-        <p>Username:</p><br>
-        <input type="text" name="username"><br>
-        <p>Password:</p><br>
-        <input type="text" name="password"><br><br>
-        <input type="submit" value="Login">
-      </fieldset>
-    </form>
+
 
   </body>
 

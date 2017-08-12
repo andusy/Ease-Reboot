@@ -1,26 +1,4 @@
 body{
   text-align: center;
-  background-color: red;
-}
-
-#logo{
-  padding-top: 20px;
-}
-
-.login{
-  color: #FFF;
-  border: 2px solid #FFF;
-  display:block;
-  padding: 20px;
-  width: 250px;
-  margin:auto;
-}
-
-.login p{
-  margin-bottom: 5px;
-  margin-top: 10px;
-}
-
-input{
-  height: 20px;
+  background-color: #E5E7E9;
 }
