@@ -26,9 +26,23 @@ function createWindow(){
 // Run createWindow function
 app.on('ready', createWindow);
 
+// Create directories
+storagePath = app.getPath("appData");
+storagePath += "/Ease-Reboot";
+createDirectory(storagePath);
+storagePath += "/userdata";
+createDirectory(storagePath);
+
 // Quit when all windows are closed
 app.on('window-all-closed', () =>{
   if (process.platform !== 'darwin'){
     app.quit();
   }
 });
+
+function createDirectory(name){
+  var fs = require('fs');
+  if (!fs.existsSync(name)){ // Path does not exist
+    fs.mkdir(name);
+  }
+}
