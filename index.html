@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/frame.css">
     <link rel="stylesheet" href="css/index.css">
     <script src = "js/frame.js"></script>
-    <script src = "js/form.js"></script>
   </head>
 
   <body>
@@ -18,6 +17,20 @@
       <li id = "settings-btn">&#9881</li>
       <li id = "close-btn">&times</li>
     </ul>
+
+    <div class = "modal" id = "help-modal">
+      <div class = "modal-content">
+        <span id = "help-close" class="close">&times;</span>
+        <p>Help</p>
+      </div>
+    </div>
+
+    <div class = "modal" id = "settings-modal">
+      <div class = "modal-content">
+        <span id = "settings-close" class="close">&times;</span>
+        <p>Settings</p>
+      </div>
+    </div>
 
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
