@@ -1,27 +1,65 @@
 class Form(){
   // Variable declaration
-  var type, date, time, amount, peer, status;
-  var due = [];
+  var type, amount, peer, due;
+  var date, time, status; // These variables cannot be set by the user
 
 
   // Empty constructor
   constructor(){
-    status = 'open';
+    this.status = 'open';
 
-    // Set date form was created
-    var year, month, day, hour, minute;
+    // Set date to when form was created
+    var m;
     var d = new Date();
 
-    year = d.getFullYear();
-    month = getMonthAsString(d.getMonth();)
-    day = d.getDate();
+    this.year = d.getFullYear();
+    this.month = d.getMonth();
+    m = getMonthAsString(d.getMonth();)
+    this.day = d.getDate();
 
-    hour = d.getHours();
-    minute = d.getMinutes();
+    this.hour = d.getHours();
+    this.minute = d.getMinutes();
 
+    // Initializing date and time
+    this.date = m + " " + this.day + ", " + this.year;
+    this.time = this.hour + ":" + this.minute;
+  }
+
+  constructor(t, a, p, d){
+    this.type = t;
+    this.amount = a;
+    this.peer = p;
+    this.due = d;
   }
 
   //  Accessors
+  getType(){
+    return this.type;
+  }
+
+  getAmount(){
+    return this.amount;
+  }
+
+  getPeer(){
+    return this.peer;
+  }
+
+  getDue(){
+    return this.due;
+  }
+
+  getDate(){
+    return this.date;
+  }
+
+  getTime(){
+    return this.time;
+  }
+
+  getStatus(){
+    return this.status;
+  }
 
   //  Mutators
 

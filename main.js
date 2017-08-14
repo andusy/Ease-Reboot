@@ -29,6 +29,7 @@ app.on('ready', createWindow);
 ////////////////////////////////////////////
 /////   Initialization  ///////////////////
 //////////////////////////////////////////
+var fs = require('fs');
 
 // Create directories
 storagePath = app.getPath("appData");
@@ -41,7 +42,16 @@ createDirectory(storagePath);
 storagePath += "/userdata";
 createDirectory(storagePath);
 
-// Create user data files
+// Create Payable folder
+createDirectory(storagePath + "/payable");
+
+// Create Receivable folder
+createDirectory(storagePath + "/receivable");
+
+// Create peer json file
+var init =  {}; // Empty json object
+var initString = JSON.stringify(init);
+fs.writeFile(storagePath + "/peerList.json", initString);
 
 // Quit when all windows are closed
 app.on('window-all-closed', () =>{
@@ -55,8 +65,4 @@ function createDirectory(name){
   if (!fs.existsSync(name)){ // Path does not exist
     fs.mkdir(name); // Make folder with the given name
   }
-}
-
-function createFile(path, name){
-
 }
