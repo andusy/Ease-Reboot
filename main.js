@@ -26,12 +26,22 @@ function createWindow(){
 // Run createWindow function
 app.on('ready', createWindow);
 
+////////////////////////////////////////////
+/////   Initialization  ///////////////////
+//////////////////////////////////////////
+
 // Create directories
 storagePath = app.getPath("appData");
+
+// Create General folder for local data
 storagePath += "/Ease-Reboot";
 createDirectory(storagePath);
+
+// Create folder for user data
 storagePath += "/userdata";
 createDirectory(storagePath);
+
+// Create user data files
 
 // Quit when all windows are closed
 app.on('window-all-closed', () =>{
@@ -43,6 +53,10 @@ app.on('window-all-closed', () =>{
 function createDirectory(name){
   var fs = require('fs');
   if (!fs.existsSync(name)){ // Path does not exist
-    fs.mkdir(name);
+    fs.mkdir(name); // Make folder with the given name
   }
+}
+
+function createFile(path, name){
+
 }
