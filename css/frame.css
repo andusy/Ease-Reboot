@@ -1,5 +1,5 @@
 .frame{
-    color:#000;
+    color:#FFF;
     float: right;
     list-style: none;
     font-size: 25px;
@@ -14,7 +14,7 @@
   margin-top: 3px;
 }
 .frame li:hover{
-  color: red;
+  color: #aaa;
 }
 
 #close-btn{
@@ -38,15 +38,22 @@
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    position:absolute;
+    top: 75px;
+    left: 300px;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border: 7px solid #FFF;
+    border-radius: 2px;
+    width: 600px;
+    height: 500px;
+    background-color: #E74C3C;
+    color: #FFF;
+    font-family: sans-serif;
 }
 
 /* Modal Close Button */
 .close {
-    color: #aaa;
+    color: #fff;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -54,21 +61,20 @@
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #aaa;
     text-decoration: none;
     cursor: pointer;
 }
 
 .sidenav {
-    height: 700px;
+    height: 630px;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #E74C3C;
-    border-top: #943126 solid 5px;
-    border-right: #943126 solid 5px;
+    border: #943126 solid 5px;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -100,4 +106,5 @@
   position: absolute;
   top:20px;
   left: 20px;
+  color: #FFF;
 }
