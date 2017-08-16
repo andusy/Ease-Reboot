@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/frame.css">
     <link rel="stylesheet" href="css/calc.css">
     <script src = "js/frame.js"></script>
+    <script src = "js/jquery.js"></script>
   </head>
 
   <body>
@@ -45,6 +46,23 @@
       <a href="calc.html"><img src = "img/menu-icons/calc.png" width = "25px"/>  Calculator</a>
     </div>
     <span id = "menu-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <div id = 'wrapper'>
+      <div id = "calc">
+        <hr/><p id = "title">Calculator</p><hr/>
+        <br/>
+        <div class = "items">
+          <h1 class = "label">Taxed</h1>
+          <h1 class = "add">+</h1>
+        </div>
+        <div class = "items">
+          <h1 class = "label">Not Taxed</h1>
+          <h1 class = "add">+</h1>
+        </div>
+        <br/>
+        <button id = "calculate">Calculate</button>
+      </div>
+    </div>
 
   </body>
 
