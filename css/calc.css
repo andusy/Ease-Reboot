@@ -32,6 +32,7 @@ hr{
   background-color: #FFF;
   display: inline-block;
   margin: 20px;
+  overflow-y: scroll;
 }
 
 .label{
@@ -57,4 +58,13 @@ hr{
 #calculate{
   width: 200px;
   height: 40px;
+}
+
+.calc-lists li{
+  background-color: #5DADE2;
+  color: #FFF;
+  font-size: 30px;
+  width: 100%;
+  border-bottom: 2px solid #21618C;
+  list-style: none;
 }

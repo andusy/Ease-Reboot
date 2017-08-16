@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/calc.css">
     <script src = "js/frame.js"></script>
     <script src = "js/jquery.js"></script>
+    <script src = "js/calc.js"></script>
   </head>
 
   <body>
@@ -53,11 +54,15 @@
         <br/>
         <div class = "items">
           <h1 class = "label">Taxed</h1>
-          <h1 class = "add">+</h1>
+          <ul class = 'calc-lists' id = "tax-list">
+          </ul>
+          <h1 class = "add" onclick = "addTax()">+</h1>
         </div>
         <div class = "items">
           <h1 class = "label">Not Taxed</h1>
-          <h1 class = "add">+</h1>
+          <ul class = "calc-lists" id = "untax-list">
+          </ul>
+          <h1 class = "add" onclick = "addNonTax()">+</h1>
         </div>
         <br/>
         <button id = "calculate">Calculate</button>
