@@ -51,7 +51,9 @@ createDirectory(storagePath + "/receivable");
 // Create peer json file
 var init =  {}; // Empty json object
 var initString = JSON.stringify(init);
-fs.writeFile(storagePath + "/peerList.json", initString);
+fs.writeFile(storagePath + "/peerList.json", initString, (error) => {
+  return;
+});
 
 // Quit when all windows are closed
 app.on('window-all-closed', () =>{
