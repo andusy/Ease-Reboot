@@ -56,6 +56,15 @@ body{
     font-family: sans-serif;
 }
 
+.modal-title{
+  font-size: 30px;
+  font-style: italic;
+}
+
+.modal-content p a{
+  text-decoration: none;
+}
+
 /* Modal Close Button */
 .close {
     color: #fff;
