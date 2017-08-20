@@ -26,6 +26,10 @@ hr{
 	margin-right: 10px;
 }
 
+#wrapper{
+  color: #FFF;
+}
+
 .label {
   font-size: 20px;
   color: #FFF;
@@ -33,7 +37,7 @@ hr{
   margin-top: 30px;
 }
 
-.type{
+.drop{
   font-size: 20px;
   display: inline-block;
 }
